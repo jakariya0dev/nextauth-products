@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const AboutPage = () => {
   return (
     <section className="bg-gray-950 text-white py-16 px-6 md:px-12 min-h-screen">
@@ -46,12 +48,12 @@ const AboutPage = () => {
           <h3 className="text-2xl font-semibold text-gray-200 mb-4">
             Ready to Explore?
           </h3>
-          <a
+          <Link
             href="/products"
             className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-700 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             View Our Products
-          </a>
+          </Lin>
         </div>
       </div>
     </section>
