@@ -1,42 +1,72 @@
-# Next.js Product Management App
+# NextAuth Google Authentication Example
 
-This is a **Next.js 15** application built with the **App Router** and **Turbopack**, featuring:
+This project demonstrates how to integrate **Google Authentication** in a **Next.js 14 app** using **NextAuth.js**.
 
-- **Public Pages:**
-  - Landing page with Navbar, Hero, Product Highlights, and Footer
-  - Product list and product details
-
-- **Authentication:**
-  - Google login using **NextAuth.js**
-  - Conditional Navbar showing Login/Logout based on session
-  - Protected routes for adding products
-
-- **Product Management:**
-  - View product list
-  - Add new products (stored in JSON for development purposes)
-  - Dynamic product details page
-
-- **Enhancements:**
-  - Loading spinners on async operations
-  - Optional toast notifications
-  - Light/Dark theme toggle (if implemented)
-
-### **Tech Stack:**
-- Next.js 15 (App Router)
-- NextAuth.js (Google OAuth)
-- React + Tailwind CSS
-- JSON-based mock backend
-- Vercel deployment ready
-
-### **Usage:**
-1. Clone the repo
-2. Install dependencies: `npm install`
-3. Create `.env.local` with your Google OAuth credentials and NextAuth secret
-4. Run the dev server: `npm run dev`
-5. Visit [http://localhost:3000](http://localhost:3000)
+It includes protected routes, a global provider setup, and deployment instructions for Vercel.
 
 ---
 
-### **Notes:**
-- JSON storage is **development only**; data will not persist on production (Vercel).  
-- For production, replace JSON storage with a cloud database (MongoDB, Supabase, etc.).
+## 🚀 Live Demo
+
+[🔗 Visit the Live Website](https://nextauth-products.vercel.app/)
+
+---
+
+## 📦 Setup & Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/jakariya0dev/nextauth-products
+cd nextauth-products
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Environment variables**  
+   Create a `.env.local` file in the project root and add:
+
+```env
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret-key
+```
+
+4. **Run the development server**
+
+```bash
+npm run dev
+```
+
+Now open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🛣️ Route Summary
+
+- `/` → Homepage (Public)
+- `/protected` → Protected page (only accessible after sign in)
+- `/api/auth/[...nextauth]` → NextAuth API route (handles authentication logic)
+- `/404` → Custom Not Found page
+
+---
+
+## 🚀 Deployment on Vercel
+
+1. Push the project to a **GitHub repo**.
+2. Go to [Vercel](https://vercel.com), import the repo.
+3. Add environment variables (`GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `NEXTAUTH_URL`, `NEXTAUTH_SECRET`) in Vercel dashboard.
+4. Deploy — your app will be live within minutes!
+
+---
+
+## 📖 License
+
+This project is licensed under the **MIT License** – feel free to use and modify as needed.
