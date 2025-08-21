@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "description": "A powerful laptop for developers",
+    "price": 1200,
+    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg"
+  },
+  {
+    "id": 2,
+    "name": "SmartPhone X",
+    "description": "Latest smartphone with great camera",
+    "price": 800,
+    "image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Earbuds",
+    "description": "High-quality sound and noise cancellation",
+    "price": 150,
+    "image": "https://images.pexels.com/photos/5099868/pexels-photo-5099868.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch Pro",
+    "description": "Track your fitness and notifications",
+    "price": 200,
+    "image": "https://images.pexels.com/photos/51011/pexels-photo-51011.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Tablet PC",
+    "description": "Lightweight tablet for work and play",
+    "price": 400,
+    "image": "https://images.pexels.com/photos/2070069/pexels-photo-2070069.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "description": "Portable speaker with deep bass",
+    "price": 90,
+    "image": "https://images.pexels.com/photos/18589085/pexels-photo-18589085.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Gaming Mouse",
+    "description": "Ergonomic mouse with customizable buttons",
+    "price": 60,
+    "image": "https://images.pexels.com/photos/33475288/pexels-photo-33475288.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit keyboard for gamers",
+    "price": 120,
+    "image": "https://images.pexels.com/photos/33444565/pexels-photo-33444565.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "External SSD",
+    "description": "Fast and reliable portable storage",
+    "price": 180,
+    "image": "https://images.pexels.com/photos/4633278/pexels-photo-4633278.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Webcam HD",
+    "description": "HD webcam for video conferencing",
+    "price": 75,
+    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg"
+  }
+]
