@@ -53,7 +53,7 @@ const AboutPage = () => {
             className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-700 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             View Our Products
-          </Lin>
+          </Link>
         </div>
       </div>
     </section>
