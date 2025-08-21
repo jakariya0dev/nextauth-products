@@ -1,13 +1,7 @@
-// A complete and responsive footer component for a tech product website.
-// It features multiple columns for navigation, a social media section,
-
 import Link from "next/link";
 
-// and a copyright notice. The design aligns with the dark theme of the other components.
 const SiteFooter = () => {
   return (
-    // Main footer container with dark background and padding.
-    // The border-t adds a subtle separator from the main content.
     <footer className="bg-gray-950 text-white border-t border-gray-800 py-12 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Main grid layout for footer content */}
@@ -34,28 +28,28 @@ const SiteFooter = () => {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/products"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/about"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contact"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -65,36 +59,36 @@ const SiteFooter = () => {
             <h4 className="font-semibold text-gray-200">Support</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a
-                  href="/faq"
+                <Link
+                  href="/about"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/shipping"
+                <Link
+                  href="/about"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   Shipping & Returns
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/privacy"
+                <Link
+                  href="/about"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/terms"
                   className="hover:text-blue-400 transition-colors duration-200"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -105,7 +99,7 @@ const SiteFooter = () => {
             <div className="flex space-x-4">
               {/* Twitter SVG Icon */}
               <a
-                href="#"
+                href="https://twitter.com/"
                 aria-label="Twitter"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
               >
@@ -122,7 +116,7 @@ const SiteFooter = () => {
               </a>
               {/* Instagram SVG Icon */}
               <a
-                href="#"
+                href="https://www.instagram.com"
                 aria-label="Instagram"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
               >
@@ -139,7 +133,7 @@ const SiteFooter = () => {
               </a>
               {/* LinkedIn SVG Icon */}
               <a
-                href="#"
+                href="https://www.linkedin.com"
                 aria-label="LinkedIn"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
               >

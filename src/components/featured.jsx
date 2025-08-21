@@ -1,42 +1,38 @@
-// Note: In a real Next.js project, you would use the 'next/link' component
-// instead of a standard 'a' tag for client-side navigation.
-// import Link from 'next/link';
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 
-// Mock product data to showcase the component. In a real application,
-// this data would be fetched from an API or a CMS.
-const products = [
-  {
-    id: 1,
-    name: "Quantum Headset",
-    description:
-      "Immersive audio and spatial tracking for a new dimension of sound. Experience every detail with clarity and depth.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1546435770-ce6c0853503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    link: "/products/quantum-headset",
-  },
-  {
-    id: 2,
-    name: "Aether Keyboard",
-    description:
-      "A mechanical keyboard with customizable RGB lighting and a minimalist design. Built for speed and precision.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1618384874034-e40854d9c490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    link: "/products/aether-keyboard",
-  },
-  {
-    id: 3,
-    name: "Chrono Mouse",
-    description:
-      "Ergonomic gaming mouse with ultra-low latency and programmable buttons. Perfect for competitive play.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1579762580796-0e120d5c02b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit-crop&w=1770&q=80",
-    link: "/products/chrono-mouse",
-  },
-];
-
-// A dynamic and visually appealing section to showcase key products.
-// It uses a responsive grid and dark theme to align with the hero section's style.
 const ProductHighlights = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const color = "#4A90E2"; // Spinner color
+  const override = {
+    display: "block",
+    margin: "0 auto",
+    borderWidth: "4px",
+    borderStyle: "solid",
+    borderRadius: "50%",
+    borderTopColor: color,
+    borderColor: color,
+  };
+
+  useEffect(() => {
+    fetch("/api/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.slice(0, 3));
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <ClipLoader color={color} cssOverride={override} size={50} />
+      </div>
+    );
+  }
   return (
     <section className="bg-gray-950 text-white py-16 px-6 md:px-12">
       {/* Section header with a subtle gradient effect on the title */}
@@ -62,8 +58,10 @@ const ProductHighlights = () => {
                        transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
             >
               {/* Product image with rounded corners */}
-              <img
-                src={product.imageUrl}
+              <Image
+                width={500}
+                height={500}
+                src={product.image}
                 alt={product.name}
                 className="w-full h-48 object-cover rounded-t-2xl"
               />
@@ -88,7 +86,6 @@ const ProductHighlights = () => {
         </div>
 
         {/* Button to browse more products */}
-        {/* The mt-12 class adds a top margin, and text-center centers the button */}
         <div className="mt-12 text-center">
           <a
             href="/products"

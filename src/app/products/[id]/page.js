@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -40,35 +39,54 @@ export default function ProductDetails({ params }) {
     );
 
   return (
-    <section className="min-h-screen bg-gray-100 flex items-center justify-center text-gray-700">
-      
-      <div className="p-10 bg-gray-50 shadow-md rounded-lg space-y-2">
-        <Image
-          src={product.image}
-          alt={product.name}
-          width={400}
-          height={400}
-          className="w-full h-64 object-cover mb-4 rounded"
-        />
-        <h1 className="text-2xl">{product.name}</h1>
-        <p>{product.description}</p>
-        <p className="text-lg font-semibold mt-2">
-          {" "}
-          <span>Price:</span> ${product.price}
-        </p>
-        <div className="flex justify-between items-center mt-4">
-          <Link
-            href="/products"
-            className="inline-block mt-4 px-4 py-2 bg-transparent border border-blue-600 text-gray-700 rounded hover:bg-blue-700 hover:text-white transition-colors"
-          >
-            Back to products
-          </Link>
-          <Link
-            href="/products"
-            className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-          >
-            Add to Cart
-          </Link>
+    <section className="bg-gray-950 text-white py-16 px-6 md:px-12 min-h-screen">
+      <div className="max-w-7xl mx-auto">
+        {/* Product details container */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+          {/* Product image section */}
+          <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-lg border border-gray-700">
+            <Image
+              width={500}
+              height={500}
+              src={product.image}
+              alt={product.name}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
+          {/* Product information section */}
+          <div className="w-full md:w-1/2 space-y-6">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                {product.name}
+              </span>
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              {product.description}
+            </p>
+
+            {/* Features list */}
+            <div className="space-y-2">
+              <h2 className="text-xl font-semibold text-gray-200">
+                Key Features
+              </h2>
+              <ul className="list-disc list-inside text-gray-400">
+                {product.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Price and Add to Cart button */}
+            <div className="pt-6 border-t border-gray-700 flex flex-col sm:flex-row sm:items-center gap-6">
+              <p className="text-yellow-400 font-bold text-3xl sm:text-4xl">
+                ${product.price}
+              </p>
+              <button className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-700 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                Add to Cart
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

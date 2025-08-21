@@ -2,71 +2,163 @@
   {
     "id": 1,
     "name": "Laptop Pro",
-    "description": "A powerful laptop for developers",
+    "description": "The Laptop Pro is a pinnacle of modern engineering, meticulously crafted for peak performance and unparalleled elegance. Its lightweight, ultra-thin aluminum chassis houses a powerhouse of a machine, featuring the latest multi-core processor and a state-of-the-art graphics card. This combination ensures that you can effortlessly tackle complex design projects, run demanding applications, and enjoy fluid multitasking without any lag. The vibrant 15-inch Retina display delivers stunning visuals with exceptional clarity and a wide color gamut, making it a perfect tool for both creative work and immersive entertainment. With a revolutionary cooling system that keeps the device quiet even under heavy load and a battery that lasts all day, the Laptop Pro is the definitive choice for professionals who refuse to compromise.",
     "price": 1200,
-    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg"
+    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg",
+    "features": [
+      "Next-generation multi-core processor",
+      "Dedicated high-performance graphics card",
+      "Stunning 15-inch Retina display",
+      "Sleek and durable aluminum chassis",
+      "All-day battery life with fast charging",
+      "Whisper-quiet cooling system"
+    ]
   },
   {
     "id": 2,
     "name": "SmartPhone X",
-    "description": "Latest smartphone with great camera",
+    "description": "Redefine your mobile experience with the SmartPhone X, a device that seamlessly blends cutting-edge technology with intuitive design. Its cinematic edge-to-edge OLED display offers an incredibly vibrant and sharp viewing experience, while the advanced camera system with AI-powered enhancements captures stunning photos and videos in any lighting condition. The powerful octa-core processor ensures lightning-fast app performance and smooth navigation, complemented by an ultra-secure facial recognition system for instant, effortless access. Built to withstand the rigors of daily life, the SmartPhone X is more than just a phone—it's your digital companion for the future.",
     "price": 800,
-    "image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg"
+    "image": "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg",
+    "features": [
+      "Edge-to-edge OLED display",
+      "Pro-grade dual-lens camera system",
+      "AI-powered photo enhancements",
+      "Ultra-fast octa-core processor",
+      "Advanced facial recognition security",
+      "Long-lasting smart battery"
+    ]
   },
   {
     "id": 3,
     "name": "Wireless Earbuds",
-    "description": "High-quality sound and noise cancellation",
+    "description": "Immerse yourself in pure audio with our Wireless Earbuds, engineered for both exceptional sound quality and ultimate comfort. Featuring powerful dynamic drivers, they deliver rich, deep bass and crystal-clear highs, bringing your music to life. The active noise cancellation technology intelligently blocks out external distractions, allowing you to focus on your audio, while the transparency mode lets you stay aware of your surroundings when needed. The sleek, ergonomic design ensures a secure and comfortable fit for hours on end, and the compact charging case provides multiple full charges on the go, making them the perfect companion for your daily commute or workout.",
     "price": 150,
-    "image": "https://images.pexels.com/photos/5099868/pexels-photo-5099868.jpeg"
+    "image": "https://images.pexels.com/photos/5099868/pexels-photo-5099868.jpeg",
+    "features": [
+      "High-fidelity dynamic drivers",
+      "Active noise cancellation (ANC)",
+      "Transparency mode for awareness",
+      "Ergonomic, secure-fit design",
+      "Intuitive touch controls",
+      "Compact charging case for multiple recharges"
+    ]
   },
   {
     "id": 4,
     "name": "Smartwatch Pro",
-    "description": "Track your fitness and notifications",
+    "description": "Stay connected and in control with the Smartwatch Pro, a sophisticated wearable that seamlessly integrates into your active lifestyle. Beyond telling time, it's a comprehensive health and fitness tracker, monitoring everything from your heart rate and sleep patterns to your daily steps and calorie burn. Its vibrant, always-on display shows your notifications at a glance, allowing you to stay connected without needing to pull out your phone. Made from premium, durable materials, this smartwatch is designed to endure any adventure, from the gym to the great outdoors. With a suite of advanced features and customizable watch faces, it's the perfect fusion of style and technology.",
     "price": 200,
-    "image": "https://images.pexels.com/photos/51011/pexels-photo-51011.jpeg"
+    "image": "https://images.pexels.com/photos/51011/pexels-photo-51011.jpeg",
+    "features": [
+      "Advanced heart rate and sleep tracking",
+      "Always-on, high-resolution display",
+      "Durable, water-resistant build",
+      "Seamless smartphone notifications",
+      "Built-in GPS for accurate route tracking",
+      "Customizable watch faces and bands"
+    ]
   },
   {
     "id": 5,
     "name": "Tablet PC",
-    "description": "Lightweight tablet for work and play",
+    "description": "Unlock a new level of creativity and productivity with the Tablet PC, a versatile device that adapts to your every need. Its stunning 11-inch Liquid Retina display provides a smooth and responsive touch experience, making it ideal for drawing, note-taking, and content consumption. Powered by a high-efficiency processor, it delivers desktop-class performance in a portable form factor, allowing you to run professional software and switch between tasks with ease. The lightweight and sleek design ensures it's comfortable to hold for extended periods, and the durable aluminum casing protects it from daily wear and tear. Whether you're a student, an artist, or a professional, this tablet is your all-in-one solution.",
     "price": 400,
-    "image": "https://images.pexels.com/photos/2070069/pexels-photo-2070069.jpeg"
+    "image": "https://images.pexels.com/photos/2070069/pexels-photo-2070069.jpeg",
+    "features": [
+      "High-efficiency mobile processor",
+      "Smooth 11-inch Liquid Retina display",
+      "Lightweight and portable design",
+      "Long-lasting battery life",
+      "Compatible with styluses and keyboards",
+      "High-quality dual cameras"
+    ]
   },
   {
     "id": 6,
     "name": "Bluetooth Speaker",
-    "description": "Portable speaker with deep bass",
+    "description": "Elevate your audio experience with the Bluetooth Speaker, a compact yet powerful device designed for music lovers on the move. Its advanced acoustic engineering delivers rich, room-filling sound with surprisingly deep bass and clear, balanced mid-range tones. The rugged, splash-proof design makes it the perfect companion for outdoor adventures, while the sleek and modern aesthetic fits perfectly in any home environment. With a long-lasting battery, you can keep the party going for hours, and its stable Bluetooth connectivity ensures a seamless, interruption-free listening experience. Take your music everywhere with you and share the beat with those around you.",
     "price": 90,
-    "image": "https://images.pexels.com/photos/18589085/pexels-photo-18589085.jpeg"
+    "image": "https://images.pexels.com/photos/18589085/pexels-photo-18589085.jpeg",
+    "features": [
+      "Advanced acoustic drivers for rich sound",
+      "Powerful bass with passive radiators",
+      "Rugged, splash-proof design",
+      "Up to 15 hours of playback time",
+      "Seamless Bluetooth 5.0 connectivity",
+      "Built-in microphone for hands-free calls"
+    ]
   },
   {
     "id": 7,
     "name": "Gaming Mouse",
-    "description": "Ergonomic mouse with customizable buttons",
+    "description": "Gain the competitive edge with the Gaming Mouse, engineered for lightning-fast reflexes and precision control. Featuring a high-precision optical sensor with adjustable DPI settings, it offers pinpoint accuracy for every in-game action. The ergonomic design provides a comfortable grip, reducing fatigue during long gaming sessions, while the customizable RGB lighting lets you personalize your setup. With programmable buttons and ultra-responsive switches, every click is registered instantly, giving you the upper hand in fast-paced games. The durable braided cable and non-slip feet ensure a stable connection and smooth gliding across any surface.",
     "price": 60,
-    "image": "https://images.pexels.com/photos/33475288/pexels-photo-33475288.jpeg"
+    "image": "https://images.pexels.com/photos/33475288/pexels-photo-33475288.jpeg",
+    "features": [
+      "High-precision optical sensor",
+      "Adjustable DPI settings",
+      "Ergonomic design for comfortable grip",
+      "Customizable RGB lighting",
+      "Programmable buttons and macros",
+      "Ultra-responsive mechanical switches"
+    ]
   },
   {
     "id": 8,
     "name": "Mechanical Keyboard",
-    "description": "RGB backlit keyboard for gamers",
+    "description": "Unlock your full potential with the Mechanical Keyboard, a premium accessory designed for gamers and typists alike. The tactile mechanical switches provide a satisfying click and a responsive feel, while the customizable RGB backlighting allows you to create a personalized light show to match your setup. Its robust, anti-ghosting design ensures that every keystroke is registered accurately, even during the most intense gaming sessions. The durable aluminum top plate and braided USB-C cable make it a long-lasting and reliable tool. With dedicated media keys and a comfortable wrist rest, it combines performance and convenience in one powerful package.",
     "price": 120,
-    "image": "https://images.pexels.com/photos/33444565/pexels-photo-33444565.jpeg"
+    "image": "https://images.pexels.com/photos/33444565/pexels-photo-33444565.jpeg",
+    "features": [
+      "Responsive mechanical switches",
+      "Per-key customizable RGB backlighting",
+      "Full N-key rollover and anti-ghosting",
+      "Durable aluminum top plate",
+      "Detachable USB-C braided cable",
+      "Dedicated media keys"
+    ]
   },
   {
     "id": 9,
     "name": "External SSD",
-    "description": "Fast and reliable portable storage",
+    "description": "Boost your productivity and secure your data with the External SSD, offering lightning-fast read and write speeds in a pocket-sized form factor. Ideal for professionals and students, this device provides a massive amount of storage for large files, high-resolution videos, and extensive document libraries. The rugged, drop-resistant build and advanced encryption technology ensure your data remains safe and protected from both physical damage and unauthorized access. Its universal compatibility with USB-C and USB-A ports makes it easy to use with any device, providing a reliable and portable storage solution wherever you go.",
     "price": 180,
-    "image": "https://images.pexels.com/photos/4633278/pexels-photo-4633278.jpeg"
+    "image": "https://images.pexels.com/photos/4633278/pexels-photo-4633278.jpeg",
+    "features": [
+      "Lightning-fast read and write speeds",
+      "Pocket-sized and portable",
+      "Rugged, drop-resistant design",
+      "Advanced hardware encryption",
+      "Universal USB-C and USB-A compatibility",
+      "High-capacity storage options"
+    ]
   },
   {
     "id": 10,
     "name": "Webcam HD",
-    "description": "HD webcam for video conferencing",
+    "description": "Step up your video calls and streaming with the Webcam HD, delivering crisp, clear visuals and rich audio. Its high-resolution sensor captures every detail in true-to-life color, while the wide-angle lens is perfect for showcasing more of your environment during presentations. The integrated dual-microphone system with automatic noise reduction ensures that your voice comes through loud and clear, free from background noise. With a simple plug-and-play setup and a versatile mounting clip, you can easily attach it to any laptop or monitor. The Webcam HD is an essential tool for remote work, online classes, and creating high-quality video content.",
     "price": 75,
-    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg"
+    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg",
+    "features": [
+      "Full HD 1080p video resolution",
+      "Wide-angle lens for group calls",
+      "Integrated dual microphones with noise reduction",
+      "Plug-and-play USB connectivity",
+      "Versatile mounting clip for any screen",
+      "Automatic low-light correction"
+    ]
+  },
+  {
+    "id": 1755788081577,
+    "name": "tyjtyj",
+    "description": "ytjtyjty",
+    "price": 67,
+    "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg",
+    "features": [
+      "hhtyhty ",
+      "tyh tyh ",
+      "t yh ty"
+    ]
   }
 ]

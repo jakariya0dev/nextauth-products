@@ -1,23 +1,38 @@
 "use client";
 
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Navbar() {
   const { data: session, status } = useSession();
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <nav className="sticky top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-gray-800 text-white shadow-lg border-b border-gray-700">
       {/* Left side (Logo / Home) */}
-      <div className="font-bold text-xl">
-        <Link href="/">MyApp</Link>
+      <div className="font-semibold text-2xl">
+        <Link href="/">TechFusion</Link>
+      </div>
+
+      <div>
+        <Link href="/">Home</Link>
+        <Link href="/products" className="ml-4">
+          Products
+        </Link>
+        <Link href="/about" className="ml-4">
+          About Us
+        </Link>
+        <Link href="/contact" className="ml-4">
+          Contact
+        </Link>
+        {session && (
+          <Link href="/dashboard" className="ml-4">
+            Dashboard
+          </Link>
+        )}
       </div>
 
       {/* Right side (Links + Auth) */}
       <div className="flex items-center gap-4">
-        <Link href="/dashboard">Dashboard</Link>
-        <Link href="/about">About</Link>
-
         {/* Conditional Auth Buttons */}
         {status === "loading" ? (
           <span>Loading...</span>
@@ -34,7 +49,7 @@ export default function Navbar() {
         ) : (
           <button
             onClick={() => signIn("google")}
-            className="px-3 py-1 bg-blue-500 rounded hover:bg-blue-600"
+            className="px-3 py-1 bg-blue-500 rounded hover:bg-blue-600 text-lg"
           >
             Login
           </button>

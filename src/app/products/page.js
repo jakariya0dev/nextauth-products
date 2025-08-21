@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -52,17 +53,17 @@ export default function ProductsPage() {
           </p>
         </div>
 
-        {/* Responsive grid for the product cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {/* product cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {products.map((product) => (
             <div
               key={product.id}
               className="bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700
                          transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
             >
-              {/* Product image with rounded corners */}
+              {/* Product image */}
               <div className="relative w-full h-48">
-                {/* Replaced the Next.js Image component with a standard img tag */}
+                
                 <Image
                   width={500}
                   height={500}
@@ -81,17 +82,20 @@ export default function ProductsPage() {
                 </p>
                 {/* Product price */}
                 <p className="text-yellow-400 font-bold mb-4 text-xl">
-                  Price: ${product.price} <span className="text-gray-400 line-through text-lg">{product.price+(product.price*0.1)}</span>
+                  Price: ${product.price}{" "}
+                  <span className="text-gray-400 line-through text-lg">
+                    {product.price + product.price * 0.1}
+                  </span>
                 </p>
 
-                {/* Replaced the Next.js Link component with a standard a tag */}
-                <a
+                
+                <Link
                   href={`/products/${product.id}`}
                   className="inline-block w-full text-center px-6 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 rounded-full
                              transform transition-all duration-300 ease-in-out hover:from-blue-600 hover:to-purple-700 hover:scale-105"
                 >
-                  Add to Cart
-                </a>
+                  View Details
+                </Link>
               </div>
             </div>
           ))}
