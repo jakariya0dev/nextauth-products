@@ -80,7 +80,7 @@ const ProductHighlights = () => {
                              transform transition-all duration-300 ease-in-out hover:from-blue-600 hover:to-purple-700 hover:scale-105"
                 >
                   View Details
-                </Link>F
+                </Link>
               </div>
             </div>
           ))}

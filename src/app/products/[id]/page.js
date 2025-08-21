@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import ClipLoader from "react-spinners/ClipLoader";
 
 export default function ProductDetails({ params }) {
@@ -27,6 +28,10 @@ export default function ProductDetails({ params }) {
       });
   }, [id]);
 
+  const handleAddToCart = () => {
+    toast.success("Product added to cart!");
+  };
+
   if (!product)
     return (
       <div className="flex justify-center items-center h-screen">
@@ -40,6 +45,7 @@ export default function ProductDetails({ params }) {
 
   return (
     <section className="bg-gray-950 text-white py-16 px-6 md:px-12 min-h-screen">
+      <Toaster />
       <div className="max-w-7xl mx-auto">
         {/* Product details container */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
@@ -82,7 +88,10 @@ export default function ProductDetails({ params }) {
               <p className="text-yellow-400 font-bold text-3xl sm:text-4xl">
                 ${product.price}
               </p>
-              <button className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-700 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+              <button
+                onClick={handleAddToCart}
+                className="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-700 rounded-full shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              >
                 Add to Cart
               </button>
             </div>
